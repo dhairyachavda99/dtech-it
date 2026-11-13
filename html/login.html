@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dtech IT — Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/login.css" />
+</head>
+<body>
+
+  <div class="page-bg"></div>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">dtech <span>IT</span></a>
+    <a href="../index.html" class="nav-back">
+      <i class="fa-solid fa-arrow-left"></i> Back to Home
+    </a>
+  </nav>
+
+  <!-- AUTH WRAPPER -->
+  <div class="auth-wrapper">
+
+    <div class="auth-card">
+
+      <div class="auth-tabs">
+        <button class="tab-btn active" data-tab="login">Log In</button>
+        <button class="tab-btn" data-tab="signup">Sign Up</button>
+      </div>
+
+      <!-- LOGIN PANEL -->
+      <div class="auth-panel active" id="panel-login">
+        <h2>Welcome <span class="accent">back</span></h2>
+        <p class="sub">Sign in to your dtech IT account</p>
+        <form id="loginForm" novalidate>
+          <div class="form-group">
+            <label for="login-email">Email Address</label>
+            <div class="input-wrap">
+              <i class="field-icon fa-solid fa-envelope"></i>
+              <input type="email" id="login-email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <div class="input-wrap">
+              <i class="field-icon fa-solid fa-lock"></i>
+              <input type="password" id="login-password" placeholder="Enter your password" required />
+              <button type="button" class="toggle-pw" data-target="login-password" tabindex="-1">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="form-row-inline">
+            <label class="remember">
+              <input type="checkbox" /> Remember me
+            </label>
+            <a href="#" class="forgot">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn-submit">
+            Log In <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+        <div class="divider">or continue with</div>
+        <div class="social-btns">
+          <button class="social-btn"><i class="fa-brands fa-google"></i> Google</button>
+          <button class="social-btn"><i class="fa-brands fa-github"></i> GitHub</button>
+        </div>
+      </div>
+
+      <!-- SIGNUP PANEL -->
+      <div class="auth-panel" id="panel-signup">
+        <h2>Create an <span class="accent">account</span></h2>
+        <p class="sub">Join dtech IT and build beyond</p>
+        <form id="signupForm" novalidate>
+          <div class="form-group">
+            <label for="signup-name">Full Name</label>
+            <div class="input-wrap">
+              <i class="field-icon fa-solid fa-user"></i>
+              <input type="text" id="signup-name" placeholder="Your full name" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="signup-email">Email Address</label>
+            <div class="input-wrap">
+              <i class="field-icon fa-solid fa-envelope"></i>
+              <input type="email" id="signup-email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="signup-password">Password</label>
+            <div class="input-wrap">
+              <i class="field-icon fa-solid fa-lock"></i>
+              <input type="password" id="signup-password" placeholder="Create a password" required />
+              <button type="button" class="toggle-pw" data-target="signup-password" tabindex="-1">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="signup-confirm">Confirm Password</label>
+            <div class="input-wrap">
+              <i class="field-icon fa-solid fa-lock"></i>
+              <input type="password" id="signup-confirm" placeholder="Repeat your password" required />
+              <button type="button" class="toggle-pw" data-target="signup-confirm" tabindex="-1">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <button type="submit" class="btn-submit" style="margin-top:6px;">
+            Create Account <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+        <div class="divider">or continue with</div>
+        <div class="social-btns">
+          <button class="social-btn"><i class="fa-brands fa-google"></i> Google</button>
+          <button class="social-btn"><i class="fa-brands fa-github"></i> GitHub</button>
+        </div>
+        <p class="terms">
+          By signing up you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    &copy; 2025 dtech IT. All rights reserved.
+  </footer>
+
+  <script src="../js/login.js"></script>
+</body>
+</html>
