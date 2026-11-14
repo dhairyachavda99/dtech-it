@@ -499,3 +499,27 @@ img { max-width: 100%; display: block; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .hero-buttons { flex-direction: column; align-items: center; }
 }
+.dropdown { position: relative; }
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #191B20;
+  border: 1px solid #2a2c32;
+  border-radius: 6px;
+  min-width: 190px;
+  padding: 8px 0;
+  z-index: 1000;
+}
+.dropdown:hover .dropdown-menu { display: block; }
+.dropdown-menu li a {
+  display: block;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #C0C0C0;
+}
+.dropdown-menu li a:hover {
+  background-color: #090A0D;
+  color: #E32636;
+}
